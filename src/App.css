@@ -5,8 +5,8 @@
   gap: 1rem;
   grid-template:
     "header header header header" 5rem
-    "quick-add quick-add main main" 5rem
-    "quick-view quick-view main main"
+    "user-profile user-profile main main" 15rem
+    "status-bar status-bar  main main"
     "footer footer footer footer" 5rem / 1fr 1fr 2fr 2fr;
 }
 
@@ -15,18 +15,33 @@ header {
   grid-area: header;
 }
 
-quick-add {
-  background-color: lightblue;
-  grid-area: quick-add;
+#user-profile {
+  background: rgba(190, 190, 190, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(190, 190, 190, 0.18);
+  grid-area: user-profile;
 }
 
-quick-view {
-  background-color: lightcoral;
-  grid-area: quick-view;
+#status-bar {
+  background: rgba(190, 190, 190, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(190, 190, 190, 0.18);
+  grid-area: status-bar;
 }
 
 main {
-  background-color: orange;
+  background: rgba(190, 190, 190, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(190, 190, 190, 0.18);
   grid-area: main;
 }
 
