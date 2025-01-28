@@ -1,15 +1,20 @@
 import "./App.css";
+
 import QuickAdd from "./Components/UserProfile/UserProfile.jsx";
-import QuickView from "./Components/StatusBar/StatusBar.jsx";
+import StatusBar from "./Components/StatusBar/StatusBar.jsx";
 
 function App() {
   return (
     <div id="page">
-      <header>Header</header>
+      <header>
+        <h1>Homework Helper</h1>>
+      </header>
       <QuickAdd />
-      <QuickView />
-      <main>Main</main>
-      <footer>Footer</footer>
+      <StatusBar />
+      <main></main>
+      <footer>
+        <h3>Created by Pedro Bueno</h3>
+      </footer>
     </div>
   );
 }

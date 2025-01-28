@@ -1,5 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("./public/static/images/mathsymbols.jpg");
+  background-image: url("/static/images/mathsymbols.jpg");
+  font-family: Roboto;
 }

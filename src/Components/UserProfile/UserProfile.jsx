@@ -12,7 +12,7 @@ import Badge from "@mui/material/Badge";
 export default function QuickAdd() {
   return (
     <div id="user-profile">
-      <Container className="profile-card" maxWidth="lg" sx={{ height: "100%" }}>
+      <Container className="profile-card" maxWidth="sm" sx={{ height: "100%" }}>
         <div>
           <Avatar
             alt="Remy Sharp"
@@ -23,25 +23,25 @@ export default function QuickAdd() {
           </Avatar>
         </div>
         <div>
-          <h3>Remy Sharp</h3>
+          <h4 style={{ color: "white" }}>Remy Sharp</h4>
         </div>
         <div>
           <Stack direction="row" spacing={1}>
             <Tooltip title="Notifications">
               <IconButton size="large">
                 <Badge badgeContent={4} color="primary">
-                  <NotificationsIcon />
+                  <NotificationsIcon sx={{ color: "white" }} />
                 </Badge>
               </IconButton>
             </Tooltip>
             <Tooltip title="Post New Question">
               <IconButton size="large">
-                <PostAddIcon />
+                <PostAddIcon sx={{ color: "white" }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="Settings">
               <IconButton size="large">
-                <SettingsIcon />
+                <SettingsIcon sx={{ color: "white" }} />
               </IconButton>
             </Tooltip>
           </Stack>

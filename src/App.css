@@ -11,13 +11,13 @@
 }
 
 header {
-  background-color: lime;
+  background-color: rgb(124, 129, 124);
   grid-area: header;
 }
 
 #user-profile {
-  background: rgba(190, 190, 190, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(75, 75, 75, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -27,7 +27,7 @@ header {
 
 #status-bar {
   background: rgba(190, 190, 190, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -36,8 +36,8 @@ header {
 }
 
 main {
-  background: rgba(190, 190, 190, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(224, 218, 218, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -46,6 +46,6 @@ main {
 }
 
 footer {
-  background-color: lightgreen;
+  background-color: rgb(124, 129, 124);
   grid-area: footer;
 }
