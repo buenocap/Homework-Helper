@@ -1,21 +1,26 @@
-import "./App.css";
-
-import QuickAdd from "./Components/UserProfile/UserProfile.jsx";
-import StatusBar from "./Components/StatusBar/StatusBar.jsx";
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage.jsx";
+import Erastour from "./pages/Erastour.jsx";
+import axios from "axios";
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://localhost:5080/api/users")
+      .then((response) => setUsers(response.data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
-    <div id="page">
-      <header>
-        <h1>Homework Helper</h1>>
-      </header>
-      <QuickAdd />
-      <StatusBar />
-      <main></main>
-      <footer>
-        <h3>Created by Pedro Bueno</h3>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage users={users} />} />
+        <Route path="/erastour" element={<Erastour />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
