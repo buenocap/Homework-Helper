@@ -15,7 +15,7 @@ export default function QuickAdd() {
       <Container className="profile-card" maxWidth="sm" sx={{ height: "100%" }}>
         <div>
           <Avatar
-            alt="Remy Sharp"
+            alt="Marleny Lopez"
             src="/static/images/default_user.jpg"
             sx={{ width: 112, height: 112 }}
           >
@@ -23,13 +23,13 @@ export default function QuickAdd() {
           </Avatar>
         </div>
         <div>
-          <h4 style={{ color: "white" }}>Remy Sharp</h4>
+          <h4 style={{ color: "white" }}>Marleny Lopez</h4>
         </div>
         <div>
           <Stack direction="row" spacing={1}>
             <Tooltip title="Notifications">
               <IconButton size="large">
-                <Badge badgeContent={4} color="primary">
+                <Badge badgeContent={0} color="primary">
                   <NotificationsIcon sx={{ color: "white" }} />
                 </Badge>
               </IconButton>

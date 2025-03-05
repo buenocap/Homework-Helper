@@ -12,15 +12,7 @@ export default function Homepage({ users }) {
       <StatusBar />
       <UserProfile />
       <main>
-        <div>
-          <CreateUser />
-        </div>
-        <div>
-          <p>Users</p>
-          {users.length > 0
-            ? users.map((user) => <p>{user.name}</p>)
-            : "No users to show"}
-        </div>
+        <div id="main-content"></div>
       </main>
       <footer>
         <h5>Created by Pedro Bueno</h5>
