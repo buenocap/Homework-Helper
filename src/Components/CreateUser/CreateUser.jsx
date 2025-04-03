@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export default function CreateUser() {
+export default function CreateUser({ updateUserList }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,10 +20,10 @@ export default function CreateUser() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://localhost:5080/api/users",
+        "http://localhost:3000/api/users",
         formData
       );
-
+      updateUserList();
       console.log("User created:", response.data);
 
       // Clear Form
