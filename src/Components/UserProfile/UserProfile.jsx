@@ -15,7 +15,7 @@ export default function QuickAdd() {
       <Container className="profile-card" maxWidth="sm" sx={{ height: "100%" }}>
         <div>
           <Avatar
-            alt="Marleny Lopez"
+            alt="Default User"
             src="/static/images/default_user.jpg"
             sx={{ width: 112, height: 112 }}
           >
@@ -23,7 +23,7 @@ export default function QuickAdd() {
           </Avatar>
         </div>
         <div>
-          <h4 style={{ color: "white" }}>Marleny Lopez</h4>
+          <h4 style={{ color: "white" }}>Default User</h4>
         </div>
         <div>
           <Stack direction="row" spacing={1}>
